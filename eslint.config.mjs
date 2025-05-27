@@ -10,10 +10,7 @@ import tseslint from "typescript-eslint";
 export default tseslint.config(
   { ignores: ["dist", "eslint.config.js"] },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
       ecmaVersion: 2020,
@@ -26,7 +23,7 @@ export default tseslint.config(
       react,
       "@stylistic/js": stylistic,
       "@typescript-eslint": tseslint.plugin,
-      "import": importPlugin,
+      import: importPlugin,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
     },
@@ -36,23 +33,31 @@ export default tseslint.config(
       "import/no-duplicates": "error",
       // "import/no-unresolved": "warn",
       // Misc
-      "curly": ["error", "all"],
-      "eqeqeq": ["error", "always"],
-      "import/newline-after-import": ["error", { "count": 1 }],
+      curly: ["error", "all"],
+      eqeqeq: ["error", "always"],
+      "import/newline-after-import": ["error", { count: 1 }],
       "linebreak-style": ["error", "windows"],
       "no-console": ["warn", { allow: ["warn", "error"] }],
       "no-debugger": "error",
       "no-duplicate-imports": "error",
       "no-trailing-spaces": "error",
       "prefer-const": "error",
-      "quotes": ["error", "double"],
-      "semi": ["error", "always"],
+      quotes: ["error", "double"],
+      semi: ["error", "always"],
+      "linebreak-style": ["error", "windows"],
+
       // React
       "react-hooks/exhaustive-deps": "off",
-      "react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
+      "react-refresh/only-export-components": [
+        "warn",
+        { allowConstantExport: true },
+      ],
       "react/jsx-boolean-value": ["error", "never"],
-      "react/jsx-curly-spacing": ["error", { "when": "never", "children": true }],
-      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+      "react/jsx-curly-spacing": ["error", { when: "never", children: true }],
+      "react/jsx-filename-extension": [
+        1,
+        { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+      ],
       "react/no-array-index-key": "warn",
       "react/react-in-jsx-scope": "off",
       "react/self-closing-comp": "error",
@@ -66,8 +71,11 @@ export default tseslint.config(
       // "@typescript-eslint/explicit-function-return-type": ["warn", { allowExpressions: true }],
       "@typescript-eslint/no-explicit-any": "warn",
       "@typescript-eslint/no-floating-promises": "error",
-      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_", varsIgnorePattern: "^_" }],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+      ],
       "@typescript-eslint/require-await": "error",
     },
-  },
+  }
 );

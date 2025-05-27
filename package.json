@@ -10,13 +10,21 @@
   },
   "dependencies": {
     "@prisma/client": "^5.8.0",
+    "@radix-ui/react-dialog": "^1.1.14",
+    "@radix-ui/react-navigation-menu": "^1.2.13",
+    "@radix-ui/react-slot": "^1.2.3",
     "axios": "^1.6.5",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.511.0",
     "next": "14.2.29",
     "next-auth": "^4.24.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.3",
     "stripe": "^14.12.0",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss-animate": "^1.0.7",
     "zod": "^3.22.4"
   },
   "devDependencies": {
@@ -25,6 +33,7 @@
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.21",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0",
     "eslint-config-prettier": "^10.1.5",
@@ -34,8 +43,10 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.1.0",
+    "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prisma": "^5.8.0",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.32.1"
   }
